@@ -6,13 +6,11 @@
 
 # Попробуйте изменять код функции/тестов, запуская проверки заново.
 
-from capitalize import capitalize
+from src.capitalize import capitalize
 
-if capitalize('hello') != 'Hello':
-    raise Exception('Функция работает неверно!')
+assert capitalize('hello') == 'Hello'
 
-if capitalize('') != '':
-    raise Exception('Функция работает неверно!')
+assert capitalize('') == ''
 
 print('Все тесты пройдены!')
 
